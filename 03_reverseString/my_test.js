@@ -1,4 +1,8 @@
-const reverseString = function(string) {
+
+
+function getReversed(){
+
+    let string = "SALUT";
 
     let myArray = [];
     let reverseArray = [];
@@ -18,9 +22,8 @@ const reverseString = function(string) {
         y--;        
     }
     returnString = reverseArray.join("");
-    return(returnString);
+    console.log(returnString);
 
 }
 
-// Do not edit below this line
-module.exports = reverseString;
+getReversed();
