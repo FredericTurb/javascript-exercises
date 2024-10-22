@@ -1,9 +1,11 @@
-const sumAll = function(numberOne, numberTwo) {
 
+
+function sumAll (numberOne, numberTwo)
+{
     if (!Number.isInteger(numberOne) || !Number.isInteger(numberTwo))
-        return("ERROR");
+        console.log("ERROR");
     if (numberOne < 0 || numberTwo < 0)
-        return("ERROR");
+        console.log("ERROR");
 
     let swap = 0;
 
@@ -12,14 +14,14 @@ const sumAll = function(numberOne, numberTwo) {
         numberOne = numberTwo;
         numberTwo = swap;}
         
+    console.log(numberOne);
+    console.log(numberTwo);
     let totalSum = 0;
     
     for (let i = numberOne; i <= numberTwo; i++)
         {
             totalSum = totalSum + i;
         }
-    return(totalSum);
-}            
-
-// Do not edit below this line
-module.exports = sumAll;
+    console.log(totalSum);
+}        
+sumAll(123, 1);
